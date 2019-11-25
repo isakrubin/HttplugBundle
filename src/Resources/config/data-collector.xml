@@ -21,12 +21,12 @@
             <argument type="service" id="httplug.collector.collector"/>
             <argument type="service" id="httplug.collector.formatter"/>
         </service>
-
+<!--
         <service id="httplug.collector.twig.http_message" class="Http\HttplugBundle\Collector\Twig\HttpMessageMarkupExtension" public="false">
             <tag name="twig.extension" />
             <deprecated>The %service_id% service is deprecated since version 1.17 and will be removed in 2.0. Use "@Httplug/http_message.html.twig" template instead.</deprecated>
         </service>
-
+-->
         <!-- Discovered clients -->
         <service id="httplug.collector.auto_discovered_client" class="Http\HttplugBundle\Collector\ProfileClient" decorates="httplug.auto_discovery.auto_discovered_client" public="false">
             <argument type="service" id="httplug.collector.auto_discovered_client.inner"/>
